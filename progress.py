@@ -19,7 +19,7 @@ def course_progress(completed_lessons, total_lessons):
     if len(completed) > total_lessons:
         raise ValueError("Пройдених уроків не може бути більше, ніж усього")
 
-    return round(len(completed) * 100 // total_lessons)
+    return round(len(completed) * 100 / total_lessons)
 
 
 def progress_status(percent):
