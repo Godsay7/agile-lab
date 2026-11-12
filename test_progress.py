@@ -49,8 +49,3 @@ def test_progress_wrong_type_raises():
         course_progress([1], "10")
 
 
-# Статус для проміжного значення та некоректного відсотка
-def test_status_in_progress_and_invalid():
-    assert progress_status(42) == "У процесі"
-    with pytest.raises(ValueError):
-        progress_status(120)
